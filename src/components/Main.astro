@@ -1,0 +1,61 @@
+---
+import SectionContainer from './SectionContainer.astro'
+import TitleSection from './TitleSection.astro'
+import Presentation from './Presentation.astro'
+import Experience from './Experience.astro'
+
+import { titles } from '../locales/locales'
+
+import WorldIcon from './icons/WorldIcon.astro'
+import LaptopIcon from './icons/LaptopIcon.astro'
+import Projects from './Projects.astro'
+import About from './About.astro'
+
+interface Props {
+    locale: string
+}
+
+const { locale } = Astro.props
+
+
+const texts = locale === 'es' ? titles.es : titles.en
+
+const extraClassForSections = 'py-8 gap-top-4'
+
+---
+
+<main class="px-12">
+
+    <SectionContainer extraClass="py-24 gap-y-4">
+        <Presentation locale={locale} />
+    </SectionContainer>
+
+    <SectionContainer id="experience" extraClass={extraClassForSections}>
+        <TitleSection>
+            <WorldIcon />
+            {texts.experience}
+          </TitleSection>
+        <Experience locale={locale} />
+    </SectionContainer>
+
+    <SectionContainer id="projects" extraClass={extraClassForSections}>
+        <TitleSection>
+            <LaptopIcon />
+            {texts.projects}
+        </TitleSection>
+
+        <Projects locale={locale} />
+
+    </SectionContainer>
+
+    <SectionContainer id="about" extraClass={extraClassForSections}>
+        <TitleSection>
+            {texts.about}
+        </TitleSection>
+
+        <About locale={locale} />
+    </SectionContainer>
+
+    
+
+</main>

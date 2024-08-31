@@ -1,0 +1,76 @@
+---
+import { presentation } from '../locales/locales'
+
+import SocialPill from './SocialPill.astro'
+
+import LinkedinIcon from './icons/LinkedinIcon.astro'
+import GithubIcon from './icons/GithubIcon.astro'
+import EmailIcon from './icons/GmailIcon.astro'
+
+interface Props {
+    locale: string
+}
+
+const { locale } = Astro.props
+
+
+const texts = locale === 'es' ? presentation.es : presentation.en
+
+const socialPillsClass = 'size-4 md:size-5 lg:size-6'
+---
+
+<div class="flex items-center gap-6">
+    <img 
+        class="w-28 h-auto rounded-full" 
+        src="/logo.jpg" 
+        alt="Sergio Truebano image" 
+    />
+    <a href="https://www.linkedin.com/in/sergiotr74/"
+       target="_blank"
+       rel="noopener noreferrer"
+       title="Sergio Truebano linkedin"
+       class="flex items-center">
+        <span class="bg-yellow-100 text-yellow-800 text-md font-medium me-2 px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300">
+            {texts.badges.work}
+        </span>
+    </a>
+</div>
+
+<h1 class="text-3xl font-bold md:text-4xl lg:text-5xl py-4"> 
+    {texts.title} 
+</h1>
+
+<h2 class="flex flex-wrap text-xl md:text-2xl lg:text-3xl">
+    
+    <span class="opacity-80 pr-2">{texts.subtitle.student_in}</span> 
+    <span class="text-yellow-100">{texts.subtitle.degree}</span>
+    <span class="opacity-80 pr-2"> {texts.subtitle.university}</span>
+    <span class="opacity-80 pr-2"> {texts.subtitle.specializing}</span>
+    <span class="text-yellow-100"> {texts.subtitle.web_development}</span>
+    <span class="opacity-80 pr-2">,</span>
+
+    <span class="text-yellow-100 pr-2"> {texts.subtitle.artificial_intelligence}</span>
+    <span class="opacity-80 pr-2">{texts.subtitle.and}</span>
+    <span class="text-yellow-100"> {texts.subtitle.cybersecurity}</span>
+</h2>
+
+<ul class="flex flex-wrap gap-2">
+    <li> 
+        <SocialPill>
+            <EmailIcon class={socialPillsClass} />
+            {texts.badges.email}
+        </SocialPill>
+    </li>
+    <li> 
+        <SocialPill href="https://www.linkedin.com/in/sergiotr74/">
+            <LinkedinIcon class={socialPillsClass} />
+            {texts.badges.linkedin}
+        </SocialPill>
+    </li>
+    <li> 
+        <SocialPill href="https://github.com/sergio-tr">
+            <GithubIcon class={socialPillsClass} />
+            {texts.badges.github}
+        </SocialPill>
+    </li>
+</ul>
