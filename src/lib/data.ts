@@ -142,22 +142,22 @@ export const NAVITEMS = {
         {
             title: "Home",
             label: "home",
-            url: "/#top",
+            url: "/en/#top",
         },
         {
             title: "Experience",
             label: "experience",
-            url: "/#experience",
+            url: "/en/#experience",
         },
         {
             title: "Projects",
             label: "projects",
-            url: "/#projects",
+            url: "/en/#projects",
         },
         {
             title: "About",
             label: "about",
-            url: "/#about",
+            url: "/en/#about",
         },
         {
             title: "Contact",
