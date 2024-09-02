@@ -86,7 +86,7 @@ const TAGS = {
         name: "CSS",
         class: "bg-sky-500 text-white",
         icon: CssIcon,
-    },  
+    },
     SVG: {
         name: "SVG",
         class: "bg-gray-300 text-black",
@@ -206,15 +206,15 @@ export const EXPERIENCE = {
             link: "https://www.uniovi.es/estudia/grados/sobrelosgrados/becas/uniovi",
         }
     ]
-    
+
 };
 
 
 export const PROJECTS = {
-    texts:{
+    texts: {
         es: {
             code: "Código",
-            preview: "Vista previa",   
+            preview: "Vista previa",
         },
         en: {
             code: "Code",
@@ -310,22 +310,37 @@ export const PROJECTS = {
             image: "https://cdn.icon-icons.com/icons2/1913/PNG/512/iconfinder-bl-1646-brain-artificial-intelligence-electronic-computer-processor-consciousness-4575061_121498.png",
             tags: [TAGS.EXPRESS, TAGS.JAVASCRIPT, TAGS.HTML, TAGS.CSS],
         }
-           
+
     ],
 }
 
 export const ABOUT = {
     es: {
-        text1: "Soy estudiante de Ingeniería de Software en la Universidad de Oviedo, donde me estoy especializando en el desarrollo de soluciones innovadoras y tecnológicamente avanzadas. A lo largo de mi formación académica, he descubierto una gran pasión por el desarrollo web, la seguridad informática, la inteligencia artificial y las tecnologías en la nube.", 
-        text2: "Durante mis estudios, he trabajado con diversas plataformas y frameworks como Node, React, Svelte y Astro. Me siento particularmente cómodo trabajando con lenguajes como Java, C#, JavaScript, Python, HTML, CSS y XML, que me han dado la flexibilidad para abordar una amplia gama de proyectos. Además, he comenzado a explorar otros lenguajes como Rust, Go, TypeScript, C, C++, y PHP, ampliando mis habilidades y conocimientos en el ámbito del desarrollo de software.",
+        text1: "Soy estudiante de Ingeniería de Software en la Universidad de Oviedo, donde me estoy especializando en el desarrollo de soluciones innovadoras y tecnológicamente avanzadas. A lo largo de mi formación académica, he descubierto una gran pasión por el desarrollo web, la seguridad informática, la inteligencia artificial y las tecnologías en la nube.",
+        text2: "Durante mis estudios, he trabajado con diversas plataformas y frameworks como Node, React, Svelte y Astro. Me siento particularmente cómodo trabajando con lenguajes como Java, C#, JavaScript, Python, HTML, CSS y XML, que me han dado la flexibilidad para abordar una amplia gama de proyectos. Además, he comenzado a explorar otros lenguajes como Rust, Go, TypeScript Cpp, y PHP, ampliando mis habilidades y conocimientos en el ámbito del desarrollo de software.",
         text3: "También tengo experiencia con herramientas y tecnologías como Git, Docker, Azure y AWS, las cuales utilizo regularmente para gestionar, desplegar y monitorear aplicaciones en la nube. Herramientas como Gatling, Grafana, Prometheus, Wazuh y Elasticsearch me han permitido profundizar en la seguridad y el rendimiento de las aplicaciones, áreas que considero cruciales en el desarrollo de software moderno.",
         text4: "Me considero una persona curiosa y en constante aprendizaje, siempre buscando nuevas oportunidades para crecer profesionalmente y adquirir nuevos conocimientos. Estoy entusiasmado por las infinitas posibilidades que ofrece la tecnología y espero contribuir a proyectos que no solo resuelvan problemas, sino que también impulsen la innovación y el cambio positivo."
     },
     en: {
         text1: "I am a Software Engineering student at the University of Oviedo, where I am specializing in developing innovative and technologically advanced solutions. Throughout my academic journey, I have discovered a deep passion for web development, cybersecurity, artificial intelligence, and cloud technologies.",
-        text2: "During my studies, I have worked with various platforms and frameworks such as Node, React, Svelte, and Astro. I am particularly comfortable working with languages like Java, C#, JavaScript, Python, HTML, CSS, and XML, which have given me the flexibility to tackle a wide range of projects. Additionally, I have begun exploring other languages like Rust, Go, TypeScript, C, C++, and PHP, further expanding my skills and knowledge in software development.",
+        text2: "During my studies, I have worked with various platforms and frameworks such as Node, React, Svelte, and Astro. I am particularly comfortable working with languages like Java, C#, JavaScript, Python, HTML, CSS, and XML, which have given me the flexibility to tackle a wide range of projects. Additionally, I have begun exploring other languages like Rust, Go, TypeScript, Cpp, and PHP, further expanding my skills and knowledge in software development.",
         text3: "I also have experience with tools and technologies such as Git, Docker, Azure, and AWS, which I regularly use to manage, deploy, and monitor applications in the cloud. Tools like Gatling, Grafana, Prometheus, Wazuh, and Elasticsearch have allowed me to deepen my understanding of application security and performance, areas that I consider crucial in modern software development.",
         text4: "I consider myself a curious person and a lifelong learner, always looking for new opportunities to grow professionally and acquire new knowledge. I am excited about the endless possibilities that technology offers and look forward to contributing to projects that not only solve problems but also drive innovation and positive change."
     }
-    
+
 }
+
+export const KEYWORDS = [
+    'Ingeniería de Software',
+    'desarrollo web',
+    'seguridad informática',
+    'inteligencia artificial',
+    'tecnologías en la nube',
+    'herramientas y tecnologías',
+    'Herramientas',
+    'crecer profesionalmente',
+    'innovación',
+    'Node', 'React', 'Svelte', 'Astro',
+    'JavaScript', 'Java', 'CSS', 'C#', 'Python', 'HTML', 'XML',
+    'Rust', 'Go', 'TypeScript', 'Cpp', 'PHP'
+];
