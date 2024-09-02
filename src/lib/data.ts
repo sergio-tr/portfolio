@@ -332,15 +332,22 @@ export const ABOUT = {
 
 export const KEYWORDS = [
     'Ingeniería de Software',
+    'Software Engineering',
     'desarrollo web',
+    'web development',
     'seguridad informática',
+    'cybersecurity',
     'inteligencia artificial',
+    'artificial intelligence',
     'tecnologías en la nube',
-    'herramientas y tecnologías',
-    'Herramientas',
+    'cloud technologies',
     'crecer profesionalmente',
+    'grow professionally',
     'innovación',
+    'innovation',
     'Node', 'React', 'Svelte', 'Astro',
     'JavaScript', 'Java', 'CSS', 'C#', 'Python', 'HTML', 'XML',
-    'Rust', 'Go', 'TypeScript', 'Cpp', 'PHP'
+    'Rust', 'Go', 'TypeScript', 'Cpp', 'PHP',
+    'Git', 'Docker', 'Azure', 'AWS',
+    'Gatling', 'Grafana', 'Prometheus', 'Wazuh', 'Elasticsearch',
 ];
