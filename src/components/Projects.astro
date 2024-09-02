@@ -1,0 +1,25 @@
+---
+import ProjectItem from "./ProjectItem.astro"
+import { PROJECTS as ALLPROJECTS } from "../lib/data"
+import WhiteLine from "./WhiteLine.astro"
+
+interface Props {
+  locale: string
+}
+
+const { locale } = Astro.props
+
+const PROJECTS = locale === 'es' ? ALLPROJECTS.es : ALLPROJECTS.en
+const TEXTS = locale === 'es' ? ALLPROJECTS.texts.es : ALLPROJECTS.texts.en
+
+---
+
+<div class="flex flex-col gap-y-12">
+  {
+    PROJECTS.map((project) => (
+      <ProjectItem project={project} code={TEXTS.code} preview={TEXTS.preview}/>
+      <WhiteLine />
+    ))
+  }
+</div>
+

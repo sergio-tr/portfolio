@@ -1,0 +1,23 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+import { EXPERIENCE } from "../lib/data"
+
+interface Props {
+  locale: string
+}
+
+const { locale } = Astro.props
+
+const EXPERIENCES = locale === 'es' ? EXPERIENCE.es : EXPERIENCE.en
+
+---
+
+<ol class="relative mt-6">
+  {
+    EXPERIENCES.map((experience) => (
+      <li>
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>

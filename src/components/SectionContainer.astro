@@ -1,0 +1,12 @@
+---
+interface Props {
+    id?: string
+    extraClass?: string
+}
+
+const { id, extraClass } = Astro.props
+---
+
+<section id={id} class=`flex flex-col lg:w-[740px] ${extraClass} scroll-m-20 w-full mx-auto container lg:max-w-4xl md:max-w-2xl`>
+    <slot />
+</section>
