@@ -1,5 +1,5 @@
 ---
-import { ABOUT } from '../lib/data'
+import { ABOUT, KEYWORDS } from '../lib/data'
 
 interface Props {
     locale: string
@@ -9,13 +9,30 @@ const { locale } = Astro.props
 
 const texts = locale === 'es' ? ABOUT.es : ABOUT.en
 
+const highlightText = (text: string) => {
+  let highlightedText = text;
+  
+  KEYWORDS.forEach((keyword) => {
+    const regex = new RegExp(`(${keyword})`, 'gi');
+    highlightedText = highlightedText.replace(regex, '<span class="text-yellow-100">$1</span>');
+  });
+
+  return highlightedText;
+}
+
 ---
 <article class="flex flex-col items-center justify-center gap-8 text-gray-300 md:flex-row">
-    <div
-      class="[&>p]:mb-4 [&>p>strong]:text-yellow-100 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1">
-        <p>{texts.text1}</p>
-        <p>{texts.text2}</p>
-        <p>{texts.text3}</p>
-        <p>{texts.text4}</p>
+    <div class="[&>p]:mb-4 [&>p>strong]:text-yellow-100 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1">
+        <p set:html={highlightText(texts.text1)}></p>
+        <p set:html={highlightText(texts.text2)}></p>
+        <p set:html={highlightText(texts.text3)}></p>
+        <p set:html={highlightText(texts.text4)}></p>
     </div>
 </article>
+
+<style>
+    /* Optional: you can style the highlighted text further */
+    .text-yellow-100 {
+        color: #fef9c3;
+    }
+</style>
