@@ -11,13 +11,13 @@ const items = locale === 'es' ? NAVITEMS.es : NAVITEMS.en
 
 ---
 
-<header class="flex justify-center items-center w-full pt-6 xl:w[1120px]">
+<header class="fixed top-0 z-10 flex items-center justify-center w-full mx-auto mt-2">
     
-    <nav class="flex gap-6">
+    <nav class="flex px-3 text-sm font-medium rounded-full text-gray-200 justify-center items-center">
         {
             items.map((link) => (
               <a
-                class="relative block px-2 py-2 transition hover:text-blue-500 dark:hover:text-blue-500"
+                class="relative block px-2 py-2 transition hover:text-blue-500"
                 aria-label={link.label}
                 href={link.url} >
                 {link.title}
