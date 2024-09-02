@@ -1,14 +1,18 @@
 ---
 import SectionContainer from './SectionContainer.astro'
 import TitleSection from './TitleSection.astro'
-import Presentation from './Presentation.astro'
-import Experience from './Experience.astro'
 
 import { titles } from '../locales/locales'
 
+import Presentation from './Presentation.astro'
+
 import WorldIcon from './icons/WorldIcon.astro'
+import Experience from './Experience.astro'
+
 import LaptopIcon from './icons/LaptopIcon.astro'
 import Projects from './Projects.astro'
+
+import AboutIcon from './icons/AboutIcon.astro'
 import About from './About.astro'
 
 interface Props {
@@ -50,6 +54,7 @@ const extraClassForSections = 'py-8 gap-top-4'
 
     <SectionContainer id="about" extraClass={extraClassForSections}>
         <TitleSection>
+            <AboutIcon />
             {texts.about}
         </TitleSection>
 
