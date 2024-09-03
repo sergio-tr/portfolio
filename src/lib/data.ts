@@ -268,14 +268,14 @@ export const EXPERIENCE = {
             date: "Actualmente...",
             title: "Estudiante de Ingeniería de Software",
             company: "Universidad de Oviedo",
-            description: "Estudio la carrera de Ingeniería del Software en la Universidad de Oviedo en bilingüe. Aprendiendo nuevas tecnologías, técnicas, metodologías y frameworks; acercándome cada día más al mundo laboral.",
+            description: "Estudio la carrera de Ingeniería Informática del Software en la Universidad de Oviedo en bilingüe. Aprendiendo nuevas tecnologías, técnicas, metodologías y frameworks; acercándome cada día más al mundo laboral.",
             link: "https://ingenieriainformatica.uniovi.es/infoacademica/grado/",
         },
         {
             date: "Diciembre 2022 - Julio 2023 | Octubre 2023 - Julio 2024",
             title: "Becario para Servicios Informáticos",
             company: "Universidad de Oviedo",
-            description: "Becario en la Escuela de Ingeniería Informático para el mantenimiento y configuración de alrededor de 400 equipos, con su correspondiente cableado eléctrico y de red. Creación y restauración de imágenes de sistemas operativos para la puesta en marcha de los equipos al inicio de cada curso con todo el software necesario, así como la configuración de gran parte del mismo. Necesidad de coordinación y trabajo en grupo, así como compromiso.",
+            description: "Becario en la Escuela de Ingeniería Informática para el mantenimiento y configuración de alrededor de 400 equipos, con su correspondiente cableado eléctrico y de red. Creación y restauración de imágenes de sistemas operativos para la puesta en marcha de los equipos al inicio de cada curso con todo el software necesario, así como la configuración de gran parte del mismo. Necesidad de coordinación y trabajo en grupo, así como compromiso.",
             link: "https://www.uniovi.es/estudia/grados/sobrelosgrados/becas/uniovi",
         },
     ],
@@ -431,7 +431,7 @@ export const PROJECTS = {
 
 export const ABOUT = {
     es: {
-        text1: "Soy estudiante de Ingeniería Informática de Software en la Universidad de Oviedo en bilingüe, donde me estoy especializando en el desarrollo de soluciones innovadoras y tecnológicamente avanzadas. A lo largo de mi formación académica, he descubierto una gran pasión por el desarrollo web, la seguridad informática, la inteligencia artificial y las tecnologías en la nube.",
+        text1: "Soy estudiante de Ingeniería Informática del Software en la Universidad de Oviedo en bilingüe, donde me estoy especializando en el desarrollo de soluciones innovadoras y tecnológicamente avanzadas. A lo largo de mi formación académica, he descubierto una gran pasión por el desarrollo web, la seguridad informática, la inteligencia artificial y las tecnologías en la nube.",
         text2: "Durante mis estudios, he trabajado con diversas plataformas y frameworks como Node, React, Svelte y Astro. Me siento particularmente cómodo trabajando con lenguajes como Java, C#, JavaScript, Python, HTML, CSS y XML, que me han dado la flexibilidad para abordar una amplia gama de proyectos. Además, he comenzado a explorar otros lenguajes como Rust, Go, TypeScript, C, Cpp, o PHP, ampliando mis habilidades y conocimientos en el ámbito del desarrollo de software.",
         text3: "También tengo experiencia con herramientas y tecnologías como Git, Docker, Azure, AWS, Vercel o Netlify las cuales utilizo regularmente para gestionar, desplegar y monitorear aplicaciones en la nube. Herramientas como Gatling, Grafana, Prometheus o Wazuh me han permitido profundizar en la seguridad y el rendimiento de las aplicaciones, áreas que considero cruciales en el desarrollo de software moderno.",
         text4: "Me considero una persona curiosa y en constante aprendizaje, siempre buscando nuevas oportunidades para crecer profesionalmente y adquirir nuevos conocimientos. Estoy entusiasmado por las infinitas posibilidades que ofrece la tecnología y espero contribuir a proyectos que no solo resuelvan problemas, sino que también impulsen la innovación y la mejora de la calidad de vida de las personas."
