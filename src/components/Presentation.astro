@@ -1,5 +1,5 @@
 ---
-import { presentation } from '../locales/locales'
+import { PRESENTATION } from '../lib/data'
 
 import SocialPill from './SocialPill.astro'
 
@@ -14,7 +14,7 @@ interface Props {
 const { locale } = Astro.props
 
 
-const texts = locale === 'es' ? presentation.es : presentation.en
+const texts = locale === 'es' ? PRESENTATION.es : PRESENTATION.en
 
 const socialPillsClass = 'size-4 md:size-5 lg:size-6'
 ---

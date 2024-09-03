@@ -20,6 +20,17 @@ import NetlifyIcon from "../components/icons/NetlifyIcon.astro";
 import MariaDBIcon from "../components/icons/MariaDBIcon.astro";
 import MySQLIcon from "../components/icons/MySQLIcon.astro";
 
+export const META = {
+    es: {
+        title: 'Portafolio Sergio Trúebano - Ingeniero Informático del Software',
+        description: 'Portafolio personal de Sergio Trúebano, Ingeniero Informático de Software en la Universidad de Oviedo, España. Especializado en desarrollo web, inteligencia artificial y cyberseguridad. Disponible para trabajar y seguir aprendiendo',
+    },
+    en: {
+        title: 'Sergio Trúebano Portfolio - Software Engineer',
+        description: 'Sergio Trúebano, Software Engineer at University of Oviedo, Spain. Specializing in web development, artificial intelligence and cybersecurity. Open to work and learning',
+    }
+}
+
 const TAGS = {
     ASTRO: {
         name: "Astro",
@@ -196,6 +207,61 @@ export const NAVITEMS = {
     ]
 }
 
+export const PRESENTATION = {
+    es: {
+        title: 'Hola, soy Sergio Trúebano',
+        subtitle: {
+            student_in: 'Estudiante en ',
+            degree: 'Ingeniería Informática del Software ',
+            university: 'en la Universidad de Oviedo, España.',
+            specializing: 'Especializámdome en',
+            web_development: 'desarrollo web full-stack ',
+            artificial_intelligence: 'inteligencia artificial',
+            and: 'y',
+            cybersecurity: 'seguridad informática.',
+        },
+        badges: {
+            work: 'Disponible para trabajar',
+            github: 'GitHub',
+            email: 'Contáctame',
+            linkedin: 'LinkedIn'
+        }
+    },
+    en: {
+        title: 'Hello, I am Sergio Trúebano',
+        subtitle: {
+            student_in: 'Student in ',
+            degree: 'Software Engineering',
+            university: 'at University of Oviedo, Spain.',
+            specializing: 'Specializing in',
+            web_development: 'full-stack web development',
+            artificial_intelligence: 'artificial intelligence',
+            and: 'and',
+            cybersecurity: 'cybersecurity.',
+        },
+        badges: {
+            work: 'Open to work',
+            github: 'GitHub',
+            email: 'Contact me',
+            linkedin: 'LinkedIn'
+        }
+    }
+        
+}
+
+export const TITLES = {
+    es: {
+        experience: 'Experiencia',
+        projects: 'Proyectos',
+        about: 'Sobre mi',
+    },
+    en: {
+        experience: 'Experience',
+        projects: 'Projects',
+        about: 'About',
+    }
+}
+
 export const EXPERIENCE = {
     es: [
         {
@@ -365,7 +431,7 @@ export const PROJECTS = {
 
 export const ABOUT = {
     es: {
-        text1: "Soy estudiante de Ingeniería de Software en la Universidad de Oviedo en bilingüe, donde me estoy especializando en el desarrollo de soluciones innovadoras y tecnológicamente avanzadas. A lo largo de mi formación académica, he descubierto una gran pasión por el desarrollo web, la seguridad informática, la inteligencia artificial y las tecnologías en la nube.",
+        text1: "Soy estudiante de Ingeniería Informática de Software en la Universidad de Oviedo en bilingüe, donde me estoy especializando en el desarrollo de soluciones innovadoras y tecnológicamente avanzadas. A lo largo de mi formación académica, he descubierto una gran pasión por el desarrollo web, la seguridad informática, la inteligencia artificial y las tecnologías en la nube.",
         text2: "Durante mis estudios, he trabajado con diversas plataformas y frameworks como Node, React, Svelte y Astro. Me siento particularmente cómodo trabajando con lenguajes como Java, C#, JavaScript, Python, HTML, CSS y XML, que me han dado la flexibilidad para abordar una amplia gama de proyectos. Además, he comenzado a explorar otros lenguajes como Rust, Go, TypeScript, C, Cpp, o PHP, ampliando mis habilidades y conocimientos en el ámbito del desarrollo de software.",
         text3: "También tengo experiencia con herramientas y tecnologías como Git, Docker, Azure, AWS, Vercel o Netlify las cuales utilizo regularmente para gestionar, desplegar y monitorear aplicaciones en la nube. Herramientas como Gatling, Grafana, Prometheus o Wazuh me han permitido profundizar en la seguridad y el rendimiento de las aplicaciones, áreas que considero cruciales en el desarrollo de software moderno.",
         text4: "Me considero una persona curiosa y en constante aprendizaje, siempre buscando nuevas oportunidades para crecer profesionalmente y adquirir nuevos conocimientos. Estoy entusiasmado por las infinitas posibilidades que ofrece la tecnología y espero contribuir a proyectos que no solo resuelvan problemas, sino que también impulsen la innovación y la mejora de la calidad de vida de las personas."
@@ -398,7 +464,7 @@ export const KEYWORDS = [
     'improvement of life',
     'Node', 'React', 'Svelte', 'Astro',
     'JavaScript', 'Java', 'CSS', 'C#', 'Python', 'HTML', 'XML',
-    'Rust', 'Go', 'TypeScript', 'Cpp', 'PHP',
-    'Git', 'Docker', 'Azure', 'AWS',
+    'Rust', 'Go,', 'TypeScript', 'Cpp', 'C,', 'PHP',
+    'Git', 'Docker', 'Azure', 'AWS', 'Vercel', 'Netlify',
     'Gatling', 'Grafana', 'Prometheus', 'Wazuh', 'Elasticsearch',
 ];

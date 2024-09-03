@@ -1,10 +1,10 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { meta } from '../../locales/locales'
+import { META } from '../../lib/data'
 import Main from '../../components/Main.astro';
 
 ---
 
-<Layout title={meta.en.title} description={meta.en.description} locale="en">
+<Layout title={META.en.title} description={META.en.description} locale="en">
 	<Main locale="en"/>
 </Layout>

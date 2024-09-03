@@ -2,7 +2,7 @@
 import SectionContainer from './SectionContainer.astro'
 import TitleSection from './TitleSection.astro'
 
-import { titles } from '../locales/locales'
+import { TITLES } from '../lib/data'
 
 import Presentation from './Presentation.astro'
 
@@ -22,7 +22,7 @@ interface Props {
 const { locale } = Astro.props
 
 
-const texts = locale === 'es' ? titles.es : titles.en
+const texts = locale === 'es' ? TITLES.es : TITLES.en
 
 const extraClassForSections = 'py-8 gap-top-4'
 
