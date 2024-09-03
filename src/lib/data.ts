@@ -254,11 +254,15 @@ export const TITLES = {
         experience: 'Experiencia',
         projects: 'Proyectos',
         about: 'Sobre mi',
+        contact: 'Contacto',
+        footer: 'Casi todos los derechos reservados.',
     },
     en: {
         experience: 'Experience',
         projects: 'Projects',
         about: 'About',
+        contact: 'Contact',
+        footer: 'Almost rights reserved.',
     }
 }
 
