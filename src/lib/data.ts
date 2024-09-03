@@ -15,6 +15,8 @@ import JavascriptIcon from "../components/icons/JavascriptIcon.astro";
 import SvgIcon from "../components/icons/SvgIcon.astro";
 import VercelIcon from "../components/icons/VercelIcon.astro";
 import ExpressIcon from "../components/icons/ExpressIcon.astro";
+import MongoDBIcon from "../components/icons/MongoDBIcon.astro";
+import NetlifyIcon from "../components/icons/NetlifyIcon.astro";
 
 const TAGS = {
     ASTRO: {
@@ -102,6 +104,16 @@ const TAGS = {
         class: "bg-gray-800 text-white",
         icon: ExpressIcon,
     },
+    NETLIFY: {
+        name: "Netlify",
+        class: "bg-cyan-800 text-white",
+        icon: NetlifyIcon,
+    },
+    MONGODB: {
+        name: "MongoDB",
+        class: "bg-green-800 text-white",
+        icon: MongoDBIcon,
+    }
 }
 
 export const NAVITEMS = {
@@ -209,6 +221,16 @@ export const EXPERIENCE = {
     
 };
 
+const TAGS_PER_PROJECT = {
+    portfolio: [TAGS.ASTRO, TAGS.TAILWINDCSS, TAGS.TYPESCRIPT, TAGS.NETLIFY],
+    minimalist_portfolio: [TAGS.ASTRO, TAGS.JAVASCRIPT, TAGS.CSS, TAGS.NETLIFY],
+    stap: [TAGS.EXPRESS, TAGS.REACT, TAGS.TAILWINDCSS ,TAGS.TYPESCRIPT, TAGS.WIKIDATA, TAGS.AZURE, TAGS.CICD],
+    spotify: [TAGS.ASTRO, TAGS.REACT, TAGS.SVELTE, TAGS.TYPESCRIPT, TAGS.TAILWINDCSS, TAGS.VERCEL],
+    chatbot: [TAGS.EXPRESS, TAGS.JAVASCRIPT, TAGS.HTML, TAGS.CSS],
+    compiler: [TAGS.ANTLR, TAGS.JAVA],
+    brunei: [TAGS.PHP, TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT, TAGS.SVG],
+}
+
 
 export const PROJECTS = {
     texts:{
@@ -228,90 +250,106 @@ export const PROJECTS = {
             github: "https://github.com/sergio-tr/Portfolio",
             link: "#top",
             image: "/dark_logo.jpeg",
-            tags: [TAGS.ASTRO, TAGS.TAILWINDCSS, TAGS.TYPESCRIPT, TAGS.VERCEL],
+            tags: TAGS_PER_PROJECT.portfolio,
+        },
+        {
+            title: "Portafolio Minimalista",
+            description: "Versión minimalista de este portafolio configurable con JSON. Cuenta con una lista de comandos, entre ellos la de imprimir la página Web para poder utilizar el portafolio de CV. También se puede simplemente convertir la página Web a un PDF.",
+            github: "https://github.com/sergio-tr/portfolio-json",
+            link: "https://sergiotr-minimalist.netlify.app",
+            image: "/dark_logo.jpeg",
+            tags: TAGS_PER_PROJECT.minimalist_portfolio,
         },
         {
             title: "STAP",
-            description: "Proyecto de la asignatura de Arquitectura del Software desplegado en Azure. Aplicación web que consiste en un juego que genera preguntas y respuestas utilizando la API de Wikidata. El juego tiene dos modalidades: preguntas aleatorias y una modalidad de trivia con distintas categorías.",
+            description: "Proyecto de la asignatura de Arquitectura del Software desplegado en Azure utilizando una arquitectura de microservicios. Aplicación web que consiste en un juego que genera preguntas y respuestas utilizando la API de Wikidata. El juego tiene dos modalidades: preguntas aleatorias y una modalidad de trivia con distintas categorías.",
             github: "https://github.com/Arquisoft/wiq_en3a",
             image: "https://imgs.search.brave.com/72x19ZKl1pXW07rGnLtxbxTjn2U8zQfKoaoBZvSH4i8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9m/L2ZmL1dpa2lkYXRh/LWxvZ28uc3Zn",
-            tags: [TAGS.REACT, TAGS.TAILWINDCSS, TAGS.WIKIDATA, TAGS.AZURE, TAGS.CICD],
+            tags: TAGS_PER_PROJECT.stap,
         },
         {
             title: "Compilador C--",
             description: "Proyecto de la asignatura de Diseño de Lenguajes de Programación con Java. Compila un lenguaje de programación C-- a código de nivel intermedio que es ejecutado por una máquina abstracta (MAPL).",
             github: "https://github.com/UO289930/compiler_c--",
             image: "https://imgs.search.brave.com/GJ-uzAWroLc6OaorI5akuteCwBXKsfb4Zk1sdy2A2O0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXljb21waWxlci5p/by9zdGF0aWMvaW1n/L2xhbmcvYXNtLXg4/Nl82NC5zdmc_dj0x/NzIyMTc0NDgx",
-            tags: [TAGS.JAVA, TAGS.ANTLR],
+            tags: TAGS_PER_PROJECT.compiler,
         },
         {
             title: "Página Web de Brunéi",
             description: "Proyecto de la asignatura de Software y Estándares para la Web. Página Web sobre el país de Brunéi utilizando APIs para obtener la previsión del tiempo, imágenes del país y el cambio del dolar de Brunéi al euro.",
             github: "https://github.com/UO289930/EscritorioVirtual",
             image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Flag_of_Brunei.svg/800px-Flag_of_Brunei.svg.png?20231030034813",
-            tags: [TAGS.PHP, TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT, TAGS.SVG],
+            tags: TAGS_PER_PROJECT.brunei,
         },
         {
             title: "Clon de Spotify",
             description: "Proyecto personal intentando replicar la UI de Spotify. Cuenta con un reproductor de canciones con el mantenimiento de un estado global a lo largo de todas las seccciones de la aplicación.",
             github: "https://github.com/sergio-tr/spotify-clone",
             image: "https://svgl.app/library/spotify.svg",
-            tags: [TAGS.ASTRO, TAGS.REACT, TAGS.SVELTE, TAGS.TYPESCRIPT, TAGS.TAILWINDCSS, TAGS.VERCEL],
+            tags: TAGS_PER_PROJECT.spotify,
         },
         {
             title: "Chat Bot",
             description: "Proyecto personal simple que cuenta con un servidor https con una única ruta: un chatbot que te permite enviar mensajes de texto y obtener respuestas en tiempo real a través de un único buzón de mensajes.",
             github: "https://github.com/sergio-tr/chatbot",
             image: "https://cdn.icon-icons.com/icons2/1913/PNG/512/iconfinder-bl-1646-brain-artificial-intelligence-electronic-computer-processor-consciousness-4575061_121498.png",
-            tags: [TAGS.EXPRESS, TAGS.JAVASCRIPT, TAGS.HTML, TAGS.CSS],
+            tags: TAGS_PER_PROJECT.chatbot,
         }
     ],
     en: [
         {
-            title: "Portfolio",
-            description: "Personal project by Sergio Trúebano showcasing my experience and completed projects, as well as my contact information.",
-            link: "#top",
-            github: "https://github.com/sergio-tr/Portfolio",
-            image: "/dark_logo.jpeg",
-            tags: [TAGS.ASTRO, TAGS.TAILWINDCSS, TAGS.TYPESCRIPT],
+            "title": "Portfolio",
+            "description": "Personal project by Sergio Trúebano showcasing my experience and completed projects, as well as my contact information.",
+            "github": "https://github.com/sergio-tr/Portfolio",
+            "link": "#top",
+            "image": "/dark_logo.jpeg",
+            "tags": TAGS_PER_PROJECT.portfolio
         },
         {
-            title: "STAP",
-            description: "Project for the Software Architecture course deployed on Azure. A web application that consists of a game that generates questions and answers using the Wikidata API. The game has two modes: random questions and a trivia mode with various categories.",
-            github: "https://github.com/Arquisoft/wiq_en3a",
-            image: "https://imgs.search.brave.com/72x19ZKl1pXW07rGnLtxbxTjn2U8zQfKoaoBZvSH4i8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9m/L2ZmL1dpa2lkYXRh/LWxvZ28uc3Zn",
-            tags: [TAGS.REACT, TAGS.TAILWINDCSS, TAGS.WIKIDATA, TAGS.AZURE, TAGS.CICD],
+            "title": "Minimalist Portfolio",
+            "description": "A minimalist version of this portfolio that is configurable with JSON. It includes a list of commands, such as printing the web page to use the portfolio as a CV. The web page can also be converted to a PDF.",
+            "github": "https://github.com/sergio-tr/portfolio-json",
+            "link": "https://sergiotr-minimalist.netlify.app",
+            "image": "/dark_logo.jpeg",
+            "tags": TAGS_PER_PROJECT.minimalist_portfolio
         },
         {
-            title: "C-- Compiler",
-            description: "Project for the Programming Language Design course with Java. Compiles a C-- programming language to intermediate-level code that is executed by an abstract machine (MAPL).",
-            github: "https://github.com/UO289930/compiler_c--",
-            image: "https://imgs.search.brave.com/GJ-uzAWroLc6OaorI5akuteCwBXKsfb4Zk1sdy2A2O0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXljb21waWxlci5p/by9zdGF0aWMvaW1n/L2xhbmcvYXNtLXg4/Nl82NC5zdmc_dj0x/NzIyMTc0NDgx",
-            tags: [TAGS.JAVA, TAGS.ANTLR],
+            "title": "STAP",
+            "description": "Project for the Software Architecture course deployed on Azure using a microservices architecture. A web application that consists of a game generating questions and answers using the Wikidata API. The game has two modes: random questions and a trivia mode with different categories.",
+            "github": "https://github.com/Arquisoft/wiq_en3a",
+            "image": "https://imgs.search.brave.com/72x19ZKl1pXW07rGnLtxbxTjn2U8zQfKoaoBZvSH4i8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9m/L2ZmL1dpa2lkYXRh/LWxvZ28uc3Zn",
+            "tags": TAGS_PER_PROJECT.stap
         },
         {
-            title: "Brunei Web Page",
-            description: "Project for the Software and Web Standards course. A web page about the country of Brunei using APIs to get the weather forecast, images of the country, and the exchange rate from the Brunei dollar to the euro.",
-            github: "https://github.com/UO289930/EscritorioVirtual",
-            image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Flag_of_Brunei.svg/800px-Flag_of_Brunei.svg.png?20231030034813",
-            tags: [TAGS.PHP, TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT, TAGS.SVG],
+            "title": "C-- Compiler",
+            "description": "Project for the Programming Languages Design course using Java. It compiles a C-- programming language to intermediate-level code that is executed by an abstract machine (MAPL).",
+            "github": "https://github.com/UO289930/compiler_c--",
+            "image": "https://imgs.search.brave.com/GJ-uzAWroLc6OaorI5akuteCwBXKsfb4Zk1sdy2A2O0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bXljb21waWxlci5p/by9zdGF0aWMvaW1n/L2xhbmcvYXNtLXg4/Nl82NC5zdmc_dj0x/NzIyMTc0NDgx",
+            "tags": TAGS_PER_PROJECT.compiler
         },
         {
-            title: "Spotify Clone",
-            description: "Personal project attempting to replicate the Spotify UI. Features a song player with global state management throughout all sections of the application.",
-            github: "https://github.com/sergio-tr/spotify-clone",
-            image: "https://svgl.app/library/spotify.svg",
-            tags: [TAGS.ASTRO, TAGS.REACT, TAGS.SVELTE, TAGS.TYPESCRIPT, TAGS.TAILWINDCSS, TAGS.VERCEL],
+            "title": "Brunei Web Page",
+            "description": "Project for the Software and Web Standards course. A web page about the country of Brunei using APIs to get the weather forecast, images of the country, and the exchange rate from the Brunei dollar to the euro.",
+            "github": "https://github.com/UO289930/EscritorioVirtual",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Flag_of_Brunei.svg/800px-Flag_of_Brunei.svg.png?20231030034813",
+            "tags": TAGS_PER_PROJECT.brunei
         },
         {
-            title: "Chat Bot",
-            description: "Simple personal project that features an HTTPS server with a single route: a chatbot that allows you to send text messages and receive real-time responses through a single message box.",
-            github: "https://github.com/sergio-tr/chatbot",
-            image: "https://cdn.icon-icons.com/icons2/1913/PNG/512/iconfinder-bl-1646-brain-artificial-intelligence-electronic-computer-processor-consciousness-4575061_121498.png",
-            tags: [TAGS.EXPRESS, TAGS.JAVASCRIPT, TAGS.HTML, TAGS.CSS],
+            "title": "Spotify Clone",
+            "description": "Personal project attempting to replicate the Spotify UI. It features a music player with global state management throughout all sections of the application.",
+            "github": "https://github.com/sergio-tr/spotify-clone",
+            "image": "https://svgl.app/library/spotify.svg",
+            "tags": TAGS_PER_PROJECT.spotify
+        },
+        {
+            "title": "Chat Bot",
+            "description": "Simple personal project featuring an HTTPS server with a single route: a chatbot that allows you to send text messages and receive real-time responses through a single message inbox.",
+            "github": "https://github.com/sergio-tr/chatbot",
+            "image": "https://cdn.icon-icons.com/icons2/1913/PNG/512/iconfinder-bl-1646-brain-artificial-intelligence-electronic-computer-processor-consciousness-4575061_121498.png",
+            "tags": TAGS_PER_PROJECT.chatbot
         }
-           
-    ],
+    ]
+    ,
 }
 
 export const ABOUT = {
