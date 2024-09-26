@@ -214,7 +214,7 @@ export const PRESENTATION = {
             student_in: 'Estudiante en ',
             degree: 'Ingeniería Informática del Software ',
             university: 'en la Universidad de Oviedo, España.',
-            specializing: 'Especializámdome en',
+            specializing: 'Especializándome en',
             web_development: 'desarrollo web full-stack ',
             artificial_intelligence: 'inteligencia artificial',
             and: 'y',
