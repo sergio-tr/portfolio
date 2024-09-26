@@ -262,7 +262,7 @@ export const TITLES = {
         projects: 'Projects',
         about: 'About',
         contact: 'Contact',
-        footer: 'Almost rights reserved.',
+        footer: 'Almost all rights reserved.',
     }
 }
 
