@@ -23,11 +23,11 @@ import MySQLIcon from "../components/icons/MySQLIcon.astro";
 export const META = {
     es: {
         title: 'Portafolio Sergio Trúebano - Ingeniero Informático del Software',
-        description: 'Portafolio personal de Sergio Trúebano, Ingeniero Informático de Software en la Universidad de Oviedo, España. Especializado en desarrollo web, inteligencia artificial y cyberseguridad. Disponible para trabajar y seguir aprendiendo',
+        description: 'Portafolio personal de Sergio Trúebano, Ingeniero Informático del Software por la Universidad de Oviedo. Trabajo en Indra en automatización y tools de ATM. Enfocado en inteligencia artificial, modelos LLM, sistemas RAG y arquitecturas agénticas.',
     },
     en: {
         title: 'Sergio Trúebano Portfolio - Software Engineer',
-        description: 'Sergio Trúebano, Software Engineer at University of Oviedo, Spain. Specializing in web development, artificial intelligence and cybersecurity. Open to work and learning',
+        description: 'Sergio Trúebano, Software Engineer graduated from the University of Oviedo. Working at Indra on ATM automation and testing tools. Focused on artificial intelligence, LLMs, RAG systems and agentic architectures.',
     }
 }
 
@@ -211,17 +211,21 @@ export const PRESENTATION = {
     es: {
         title: 'Hola, soy Sergio Trúebano',
         subtitle: {
-            student_in: 'Estudiante en ',
-            degree: 'Ingeniería Informática del Software ',
-            university: 'en la Universidad de Oviedo, España.',
-            specializing: 'Especializándome en',
-            web_development: 'desarrollo web full-stack ',
-            artificial_intelligence: 'inteligencia artificial',
-            and: 'y',
-            cybersecurity: 'seguridad informática.',
+            role: 'Ingeniero Informático del Software por la',
+            degree: 'Universidad de Oviedo',
+            university: '.',
+            work_at: 'Desarrollo software en',
+            company: 'Indra',
+            work_area: 'en automatización y tools de Air Traffic Management.',
+            specializing: 'Enfocado en',
+            artificial_intelligence: 'modelos de IA',
+            and: ',',
+            agentic: 'arquitecturas agénticas',
+            and2: 'y',
+            web_development: 'desarrollo web full-stack.',
         },
         badges: {
-            work: 'Disponible para trabajar',
+            work: 'Indra · ATM',
             github: 'GitHub',
             email: 'Contáctame',
             linkedin: 'LinkedIn'
@@ -230,23 +234,26 @@ export const PRESENTATION = {
     en: {
         title: 'Hello, I am Sergio Trúebano',
         subtitle: {
-            student_in: 'Student in ',
-            degree: 'Software Engineering',
-            university: 'at University of Oviedo, Spain.',
-            specializing: 'Specializing in',
-            web_development: 'full-stack web development',
-            artificial_intelligence: 'artificial intelligence',
-            and: 'and',
-            cybersecurity: 'cybersecurity.',
+            role: 'Software Engineer graduated from the',
+            degree: 'University of Oviedo',
+            university: '.',
+            work_at: 'Building software at',
+            company: 'Indra',
+            work_area: 'on Air Traffic Management automation and tools.',
+            specializing: 'Focused on',
+            artificial_intelligence: 'AI models',
+            and: ',',
+            agentic: 'agentic architectures',
+            and2: 'and',
+            web_development: 'full-stack web development.',
         },
         badges: {
-            work: 'Open to work',
+            work: 'Indra · ATM',
             github: 'GitHub',
             email: 'Contact me',
             linkedin: 'LinkedIn'
         }
     }
-        
 }
 
 export const TITLES = {
@@ -269,10 +276,17 @@ export const TITLES = {
 export const EXPERIENCE = {
     es: [
         {
-            date: "Actualmente...",
-            title: "Estudiante de Ingeniería de Software",
+            date: "Enero 2025 - Actualmente",
+            title: "Ingeniero de Software — Automatización y Tools ATM",
+            company: "Indra",
+            description: "Desarrollo de soluciones software en el ámbito de Air Traffic Management (ATM), dentro de un equipo de automatización y tools orientado a pruebas. Mantengo y mejoro herramientas backend y frontend usadas en la validación del sistema, y participo en el desarrollo de aplicaciones web de testing automatizado conectadas por API REST, con monitorización mediante OpenTelemetry, Prometheus, Jaeger y Grafana. Trabajo con un conocimiento end-to-end del ecosistema ATM que facilita la integración, el debugging y las pruebas de integración y E2E.",
+            link: "https://www.indracompany.com/",
+        },
+        {
+            date: "Septiembre 2021 - Julio 2026",
+            title: "Grado en Ingeniería Informática del Software",
             company: "Universidad de Oviedo",
-            description: "Estudio la carrera de Ingeniería Informática del Software en la Universidad de Oviedo en bilingüe. Aprendiendo nuevas tecnologías, técnicas, metodologías y frameworks; acercándome cada día más al mundo laboral.",
+            description: "Formación bilingüe en Ingeniería Informática del Software. Culminé los estudios con el Trabajo de Fin de Grado rag-spring-ai-ollama (matrícula de honor): un sistema RAG con modelos LLM locales y en catálogo, Spring AI, recuperación vectorial y una base orientada a pipelines de IA, herramientas y diseños agénticos.",
             link: "https://ingenieriainformatica.uniovi.es/infoacademica/grado/",
         },
         {
@@ -286,15 +300,22 @@ export const EXPERIENCE = {
 
     en: [
         {
-            date: "Currently...",
-            title: "Student of Software Engineering",
+            date: "January 2025 - Present",
+            title: "Software Engineer — ATM Automation & Tools",
+            company: "Indra",
+            description: "Building software solutions in Air Traffic Management (ATM) within an automation and tools team focused on testing. I maintain and improve backend and frontend tools used to validate the system, and contribute to a web app for automated testing that talks to the system over a REST API, with observability via OpenTelemetry, Prometheus, Jaeger and Grafana. End-to-end familiarity with the ATM ecosystem supports integration, debugging, and integration/E2E test automation.",
+            link: "https://www.indracompany.com/",
+        },
+        {
+            date: "September 2021 - July 2026",
+            title: "BSc in Software Engineering",
             company: "University of Oviedo",
-            description: "Studying Software Engineering at the Universidad de Oviedo in bilingual. Learning new technologies, techniques, methodologies and frameworks. Getting closer to the world of work.",
+            description: "Bilingual Software Engineering degree. Capstone: rag-spring-ai-ollama (awarded with highest honors) — a RAG system with local and catalog LLM models, Spring AI, vector retrieval, and a foundation for AI pipelines, tools, and agentic designs.",
             link: "https://ingenieriainformatica.uniovi.es/infoacademica/grado/",
         },
         {
             date: "December 2022 - July 2023 | October 2023 - July 2024",
-            title: "Software Engineer Intern",
+            title: "IT Services Intern",
             company: "University of Oviedo",
             description: "Intern at the School of Computer Engineering responsible for the maintenance and configuration of around 400 computers, including their electrical and network cabling. Involved in the creation and restoration of operating system images to set up the computers at the beginning of each academic year with all the necessary software, as well as the configuration of a large part of it. Required coordination and teamwork, as well as commitment.",
             link: "https://www.uniovi.es/estudia/grados/sobrelosgrados/becas/uniovi",
@@ -304,6 +325,7 @@ export const EXPERIENCE = {
 };
 
 const TAGS_PER_PROJECT = {
+    tfg: [TAGS.JAVA, TAGS.TYPESCRIPT, TAGS.REACT, TAGS.CICD],
     portfolio: [TAGS.ASTRO, TAGS.TAILWINDCSS, TAGS.TYPESCRIPT, TAGS.NETLIFY],
     minimalist_portfolio: [TAGS.ASTRO, TAGS.JAVASCRIPT, TAGS.CSS, TAGS.NETLIFY],
     stap: [TAGS.EXPRESS, TAGS.REACT, TAGS.TAILWINDCSS ,TAGS.TYPESCRIPT, TAGS.WIKIDATA, TAGS.AZURE, TAGS.CICD, TAGS.MONGODB],
@@ -327,9 +349,17 @@ export const PROJECTS = {
     },
     es: [
         {
+            title: "TFG: RAG Spring AI Ollama",
+            description: "Trabajo de Fin de Grado con matrícula de honor. Sistema RAG orientado a modelos LLM: Spring Boot, Spring AI, LiteLLM/Ollama, PostgreSQL + pgvector y web Next.js. Incluye clasificador de consultas (FastAPI), orquestación de providers, embeddings y recuperación vectorial, observabilidad con OpenTelemetry, Prometheus, Jaeger y Grafana, y CI/CD. Base para pipelines de IA, uso de herramientas y arquitecturas agénticas.",
+            github: "https://github.com/sergio-tr/rag-spring-ai-ollama",
+            link: "https://sergio-tr.github.io/rag-spring-ai-ollama/",
+            image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
+            tags: TAGS_PER_PROJECT.tfg,
+        },
+        {
             title: "Portafolio",
             description: "Proyecto personal de Sergio Trúebano mostrando mi experiencia y mis proyectos realizados, así como mi contacto.",
-            github: "https://github.com/sergio-tr/Portfolio",
+            github: "https://github.com/sergio-tr/portfolio",
             link: "#top",
             image: "/dark_logo.jpeg",
             tags: TAGS_PER_PROJECT.portfolio,
@@ -360,7 +390,7 @@ export const PROJECTS = {
             title: "Página Web de Brunéi",
             description: "Proyecto de la asignatura de Software y Estándares para la Web. Página Web sobre el país de Brunéi utilizando APIs para obtener la previsión del tiempo, imágenes del país y el cambio del dolar de Brunéi al euro.",
             github: "https://github.com/UO289930/EscritorioVirtual",
-            image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Flag_of_Brunei.svg/800px-Flag_of_Brunei.svg.png?20231030034813",
+            image: "https://flagcdn.com/w320/bn.png",
             tags: TAGS_PER_PROJECT.brunei,
         },
         {
@@ -380,9 +410,17 @@ export const PROJECTS = {
     ],
     en: [
         {
+            "title": "Bachelor's Thesis: RAG Spring AI Ollama",
+            "description": "Bachelor's thesis awarded with highest honors. RAG system centered on LLM models: Spring Boot, Spring AI, LiteLLM/Ollama, PostgreSQL + pgvector and a Next.js webapp. Includes a FastAPI query classifier, model-provider orchestration, embeddings and vector retrieval, observability with OpenTelemetry, Prometheus, Jaeger and Grafana, and full CI/CD. A foundation for AI pipelines, tool use, and agentic architectures.",
+            "github": "https://github.com/sergio-tr/rag-spring-ai-ollama",
+            "link": "https://sergio-tr.github.io/rag-spring-ai-ollama/",
+            "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
+            "tags": TAGS_PER_PROJECT.tfg
+        },
+        {
             "title": "Portfolio",
             "description": "Personal project by Sergio Trúebano showcasing my experience and completed projects, as well as my contact information.",
-            "github": "https://github.com/sergio-tr/Portfolio",
+            "github": "https://github.com/sergio-tr/portfolio",
             "link": "#top",
             "image": "/dark_logo.jpeg",
             "tags": TAGS_PER_PROJECT.portfolio
@@ -413,7 +451,7 @@ export const PROJECTS = {
             "title": "Brunei Web Page",
             "description": "Project for the Software and Web Standards course. A web page about the country of Brunei using APIs to get the weather forecast, images of the country, and the exchange rate from the Brunei dollar to the euro.",
             "github": "https://github.com/UO289930/EscritorioVirtual",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Flag_of_Brunei.svg/800px-Flag_of_Brunei.svg.png?20231030034813",
+            "image": "https://flagcdn.com/w320/bn.png",
             "tags": TAGS_PER_PROJECT.brunei
         },
         {
@@ -435,16 +473,16 @@ export const PROJECTS = {
 
 export const ABOUT = {
     es: {
-        text1: "Soy estudiante de Ingeniería Informática del Software en la Universidad de Oviedo en bilingüe, donde me estoy especializando en el desarrollo de soluciones innovadoras y tecnológicamente avanzadas. A lo largo de mi formación académica, he descubierto una gran pasión por el desarrollo web, la seguridad informática, la inteligencia artificial y las tecnologías en la nube.",
-        text2: "Durante mis estudios, he trabajado con diversas plataformas y frameworks como Node, React, Svelte y Astro. Me siento particularmente cómodo trabajando con lenguajes como Java, C#, JavaScript, Python, HTML, CSS y XML, que me han dado la flexibilidad para abordar una amplia gama de proyectos. Además, he comenzado a explorar otros lenguajes como Rust, Go, TypeScript, C, Cpp, o PHP, ampliando mis habilidades y conocimientos en el ámbito del desarrollo de software.",
-        text3: "También tengo experiencia con herramientas y tecnologías como Git, Docker, Azure, AWS, Vercel o Netlify las cuales utilizo regularmente para gestionar, desplegar y monitorear aplicaciones en la nube. Herramientas como Gatling, Grafana, Prometheus o Wazuh me han permitido profundizar en la seguridad y el rendimiento de las aplicaciones, áreas que considero cruciales en el desarrollo de software moderno.",
-        text4: "Me considero una persona curiosa y en constante aprendizaje, siempre buscando nuevas oportunidades para crecer profesionalmente y adquirir nuevos conocimientos. Estoy entusiasmado por las infinitas posibilidades que ofrece la tecnología y espero contribuir a proyectos que no solo resuelvan problemas, sino que también impulsen la innovación y la mejora de la calidad de vida de las personas."
+        text1: "Soy Ingeniero Informático del Software por la Universidad de Oviedo (itinerario bilingüe, sept. 2021 – jul. 2026). Actualmente trabajo en Indra, en un equipo de automatización y tools de Air Traffic Management dedicado al desarrollo de aplicaciones frontend y backend para pruebas. Mi interés principal —y cada vez más el eje de lo que construyo— es la inteligencia artificial aplicada: modelos de lenguaje, sistemas RAG, orquestación multi-modelo y arquitecturas agénticas.",
+        text2: "En el ecosistema de IA trabajo con Spring AI, LiteLLM y Ollama para servir y combinar modelos locales o en catálogo; con embeddings y búsqueda vectorial sobre PostgreSQL + pgvector; y con componentes en Python (FastAPI) para clasificación de intención u otros servicios auxiliares. A eso sumo el stack full-stack con el que me muevo a diario: Node, React, Next.js, Spring Boot, Svelte y Astro. Me siento cómodo con Java, C#, JavaScript, TypeScript y Python, y he explorado Rust, Go, C, C++ o PHP.",
+        text3: "Mi Trabajo de Fin de Grado, rag-spring-ai-ollama, obtuvo matrícula de honor. Es un sistema RAG end-to-end con catálogo de modelos, recuperación aumentada, web de producto, observabilidad (OpenTelemetry, Prometheus, Jaeger, Grafana) y CI/CD. Me sirve de base para ir más allá del chat con contexto: pipelines con herramientas, enrutado multi-modelo, clasificación de consultas y diseños agénticos en los que el modelo planifica y actúa sobre software real. En entornos distribuidos también he trabajado con mensajería AMQP y multicast, e IDL o Protocol Buffers.",
+        text4: "Utilizo habitualmente Git, Docker, Azure, AWS, Vercel o Netlify para gestionar y desplegar aplicaciones, junto con herramientas de rendimiento como Gatling. Me considero una persona curiosa y en constante aprendizaje, con el foco puesto en agentes, RAG y sistemas que combinen ingeniería de software clásica con modelos de inteligencia artificial."
     },
     en: {
-        text1: "I am a Software Engineering student at the University of Oviedo in bilingual, where I am specializing in developing innovative and technologically advanced solutions. Throughout my academic journey, I have discovered a deep passion for web development, cybersecurity, artificial intelligence, and cloud technologies.",
-        text2: "During my studies, I have worked with various platforms and frameworks such as Node, React, Svelte, and Astro. I am particularly comfortable working with languages like Java, C#, JavaScript, Python, HTML, CSS, and XML, which have given me the flexibility to tackle a wide range of projects. Additionally, I have begun exploring other languages like Rust, Go, TypeScript, C, Cpp, or PHP, further expanding my skills and knowledge in software development.",
-        text3: "I also have experience with tools and technologies such as Git, Docker, Azure, AWS, Vercel or Netlify which I regularly use to manage, deploy, and monitor applications in the cloud. Tools like Gatling, Grafana, Prometheus or Wazuh have allowed me to deepen my understanding of application security and performance, areas that I consider crucial in modern software development.",
-        text4: "I consider myself a curious person and a lifelong learner, always looking for new opportunities to grow professionally and acquire new knowledge. I am excited about the endless possibilities that technology offers and look forward to contributing to projects that not only solve problems but also drive innovation and improvement of life for people."
+        text1: "I am a Software Engineer graduated from the University of Oviedo (bilingual track, Sept 2021 – Jul 2026). I currently work at Indra on an Air Traffic Management automation and tools team building frontend and backend applications for testing. My main interest —and increasingly the core of what I build— is applied artificial intelligence: language models, RAG systems, multi-model orchestration, and agentic architectures.",
+        text2: "In the AI stack I work with Spring AI, LiteLLM, and Ollama to serve and combine local or catalog models; with embeddings and vector search on PostgreSQL + pgvector; and with Python components (FastAPI) for intent classification or other auxiliary services. Alongside that I use the full-stack tools I work with daily: Node, React, Next.js, Spring Boot, Svelte, and Astro. I am comfortable with Java, C#, JavaScript, TypeScript, and Python, and I have explored Rust, Go, C, C++, or PHP.",
+        text3: "My bachelor's thesis, rag-spring-ai-ollama, was awarded with highest honors. It is an end-to-end RAG system with a model catalog, retrieval-augmented generation, a product webapp, observability (OpenTelemetry, Prometheus, Jaeger, Grafana), and CI/CD. It is a foundation for going beyond chat-with-context: pipelines with tools, multi-model routing, query classification, and agentic designs where the model plans and acts on real software. In distributed environments I have also worked with AMQP and multicast messaging, and with IDL or Protocol Buffers.",
+        text4: "I regularly use Git, Docker, Azure, AWS, Vercel, or Netlify to manage and deploy applications, along with performance tools such as Gatling. I consider myself a curious lifelong learner, focused on agents, RAG, and systems that combine classical software engineering with artificial intelligence models."
     }
 
 }
@@ -452,23 +490,51 @@ export const ABOUT = {
 export const KEYWORDS = [
     'Ingeniería de Software',
     'Software Engineering',
+    'Indra',
+    'Air Traffic Management',
+    'ATM',
     'desarrollo web',
     'web development',
-    'seguridad informática',
-    'cybersecurity',
     'inteligencia artificial',
     'artificial intelligence',
+    'matrícula de honor',
+    'highest honors',
+    'honors',
+    'arquitecturas agénticas',
+    'agentic architectures',
+    'agentes',
+    'agents',
+    'modelos de lenguaje',
+    'modelos LLM',
+    'language models',
+    'LLM',
     'tecnologías en la nube',
     'cloud technologies',
-    'crecer profesionalmente',
-    'grow professionally',
-    'innovación',
-    'innovation',
-    'mejora de la calidad de vida',
-    'improvement of life',
+    'RAG',
+    'rag-spring-ai-ollama',
+    'Spring Boot',
+    'Spring AI',
+    'FastAPI',
+    'Next.js',
+    'Ollama',
+    'LiteLLM',
+    'PostgreSQL',
+    'pgvector',
+    'embeddings',
+    'multi-modelo',
+    'multi-model',
+    'herramientas',
+    'tool use',
+    'AMQP',
+    'multicast',
+    'IDL',
+    'Protocol Buffers',
+    'OpenTelemetry',
+    'pipelines de IA',
+    'AI pipelines',
     'Node', 'React', 'Svelte', 'Astro',
-    'JavaScript', 'Java', 'CSS', 'C#', 'Python', 'HTML', 'XML',
-    'Rust', 'Go,', 'TypeScript', 'Cpp', 'C,', 'PHP',
+    'JavaScript', 'TypeScript', 'Java', 'CSS', 'C#', 'C++', 'Python', 'HTML', 'XML',
+    'Rust', 'Go', 'PHP',
     'Git', 'Docker', 'Azure', 'AWS', 'Vercel', 'Netlify',
-    'Gatling', 'Grafana', 'Prometheus', 'Wazuh', 'Elasticsearch',
+    'Gatling', 'Grafana', 'Prometheus', 'Jaeger', 'Elasticsearch', 'CI/CD',
 ];
