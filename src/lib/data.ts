@@ -213,7 +213,7 @@ export const PRESENTATION = {
         subtitle: {
             role: 'Ingeniero Informático del Software por la',
             degree: 'Universidad de Oviedo',
-            university: '(2021–2026).',
+            university: '.',
             work_at: 'Desarrollo software en',
             company: 'Indra',
             work_area: 'en automatización y tools de Air Traffic Management.',
@@ -236,7 +236,7 @@ export const PRESENTATION = {
         subtitle: {
             role: 'Software Engineer graduated from the',
             degree: 'University of Oviedo',
-            university: '(2021–2026).',
+            university: '.',
             work_at: 'Building software at',
             company: 'Indra',
             work_area: 'on Air Traffic Management automation and tools.',
@@ -390,7 +390,7 @@ export const PROJECTS = {
             title: "Página Web de Brunéi",
             description: "Proyecto de la asignatura de Software y Estándares para la Web. Página Web sobre el país de Brunéi utilizando APIs para obtener la previsión del tiempo, imágenes del país y el cambio del dolar de Brunéi al euro.",
             github: "https://github.com/UO289930/EscritorioVirtual",
-            image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Flag_of_Brunei.svg/800px-Flag_of_Brunei.svg.png?20231030034813",
+            image: "https://flagcdn.com/w320/bn.png",
             tags: TAGS_PER_PROJECT.brunei,
         },
         {
@@ -410,7 +410,7 @@ export const PROJECTS = {
     ],
     en: [
         {
-            "title": "TFG: RAG Spring AI Ollama",
+            "title": "Bachelor's Thesis: RAG Spring AI Ollama",
             "description": "Bachelor's thesis awarded with highest honors. RAG system centered on LLM models: Spring Boot, Spring AI, LiteLLM/Ollama, PostgreSQL + pgvector and a Next.js webapp. Includes a FastAPI query classifier, model-provider orchestration, embeddings and vector retrieval, observability with OpenTelemetry, Prometheus, Jaeger and Grafana, and full CI/CD. A foundation for AI pipelines, tool use, and agentic architectures.",
             "github": "https://github.com/sergio-tr/rag-spring-ai-ollama",
             "link": "https://sergio-tr.github.io/rag-spring-ai-ollama/",
@@ -451,7 +451,7 @@ export const PROJECTS = {
             "title": "Brunei Web Page",
             "description": "Project for the Software and Web Standards course. A web page about the country of Brunei using APIs to get the weather forecast, images of the country, and the exchange rate from the Brunei dollar to the euro.",
             "github": "https://github.com/UO289930/EscritorioVirtual",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Flag_of_Brunei.svg/800px-Flag_of_Brunei.svg.png?20231030034813",
+            "image": "https://flagcdn.com/w320/bn.png",
             "tags": TAGS_PER_PROJECT.brunei
         },
         {
@@ -533,8 +533,8 @@ export const KEYWORDS = [
     'pipelines de IA',
     'AI pipelines',
     'Node', 'React', 'Svelte', 'Astro',
-    'JavaScript', 'TypeScript', 'Java', 'CSS', 'C#', 'Python', 'HTML', 'XML',
-    'Rust', 'Go', 'Cpp', 'C', 'PHP',
+    'JavaScript', 'TypeScript', 'Java', 'CSS', 'C#', 'C++', 'Python', 'HTML', 'XML',
+    'Rust', 'Go', 'PHP',
     'Git', 'Docker', 'Azure', 'AWS', 'Vercel', 'Netlify',
     'Gatling', 'Grafana', 'Prometheus', 'Jaeger', 'Elasticsearch', 'CI/CD',
 ];

@@ -9,15 +9,24 @@ const { locale } = Astro.props
 
 const texts = locale === 'es' ? ABOUT.es : ABOUT.en
 
-const highlightText = (text: string) => {
-  let highlightedText = text;
-  
-  KEYWORDS.forEach((keyword) => {
-    const regex = new RegExp(`(${keyword})`, 'gi');
-    highlightedText = highlightedText.replace(regex, '<span class="text-yellow-100">$1</span>');
-  });
+const escapeRegExp = (value: string) =>
+  value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
 
-  return highlightedText;
+/** Highlight whole keywords only, longest first, without matching inside other words or HTML. */
+const highlightText = (text: string) => {
+  const keywords = [...new Set(KEYWORDS)]
+    .filter((keyword) => keyword.trim().length > 1)
+    .sort((a, b) => b.length - a.length)
+
+  if (keywords.length === 0) return text
+
+  const pattern = keywords.map(escapeRegExp).join('|')
+  const regex = new RegExp(
+    `(?<![\\p{L}\\p{N}_.-])(${pattern})(?![\\p{L}\\p{N}_.-])`,
+    'giu'
+  )
+
+  return text.replace(regex, '<span class="text-yellow-100">$1</span>')
 }
 
 ---
@@ -31,7 +40,6 @@ const highlightText = (text: string) => {
 </article>
 
 <style>
-    /* Optional: you can style the highlighted text further */
     .text-yellow-100 {
         color: #fef9c3;
     }
