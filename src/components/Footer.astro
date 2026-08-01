@@ -25,12 +25,28 @@ const titles = locale === 'es' ? TITLES.es : TITLES.en
         </a>.
         {titles.footer}
     </span>
-    <ul class="flex flex-wrap items-center mt-3 text-sm font-medium dark:text-white/90 sm:mt-0" >
+    <ul class="flex flex-wrap items-center mt-3 text-sm font-medium dark:text-white/90 sm:mt-0 gap-4" >
       <li>
         <a href="/#about" class="hover:underline me-4 md:me-6">{titles.about}</a>
       </li>
       <li>
         <a id="contacto" href="mailto:truebanosergio@gmail.com" class="hover:underline">{titles.contact}</a>
+      </li>
+      <li>
+        <a
+          href="https://app.netlify.com/projects/sergiotr/deploys"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Netlify deploy status"
+          class="inline-flex items-center"
+        >
+          <img
+            src="https://api.netlify.com/api/v1/badges/c4ac97fa-0bac-440f-995e-28023dad0510/deploy-status"
+            alt="Netlify Status"
+            class="h-5"
+            loading="lazy"
+          />
+        </a>
       </li>
     </ul>
   </div>
